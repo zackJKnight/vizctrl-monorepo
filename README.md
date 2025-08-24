@@ -12,7 +12,7 @@ A monorepo for interactive visualization controls built with React and TypeScrip
 
 Interactive demo showcasing all the visualization controls.
 
-- **Live Demo**: [Deployed on Vercel](https://your-app-url.vercel.app)
+- **Live Demo**: [https://vizctrl-demo-ox901zt4m-zacks-projects-d0c08d39.vercel.app](https://vizctrl-demo-ox901zt4m-zacks-projects-d0c08d39.vercel.app)
 - **Local Development**: `yarn dev:app`
 
 ## Development
