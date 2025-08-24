@@ -1,6 +1,7 @@
 {
   "name": "vizctrl-monorepo",
   "private": true,
+  "packageManager": "yarn@1.22.19",
   "workspaces": [
     "packages/core",
     "packages/react",
@@ -11,7 +12,7 @@
     "build": "turbo run build --filter=*...",
     "test": "turbo run test --filter=*...",
     "dev:storybook": "turbo run storybook --filter=*...",
-    "dev:app": "turbo run dev --filter=examples/demo-app"
+    "dev:app": "turbo run dev --filter=demo-app"
   },
   "devDependencies": {
     "typescript": "^5.3.0",
