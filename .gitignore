@@ -76,3 +76,8 @@ Thumbs.db
 
 # Storybook build outputs
 storybook-static
+
+# Vercel
+.vercel
+.vercel/
+*.log
