@@ -1,6 +1,6 @@
 import React from 'react';
 import Dial from './Dial';
-import { Quantity, convert } from '@vizctrl/core/quantity';
+import { Quantity, convert } from '@vizctrl/core';
 
 type SpeedUnit = 'ms' | 'kmh' | 'mph' | 'kts';
 

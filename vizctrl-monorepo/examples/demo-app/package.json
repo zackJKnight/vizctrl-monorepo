@@ -11,7 +11,8 @@
     "react-dom": "^18.2.0",
     "@vizctrl/react": "*",
     "@vizctrl/core": "*",
-    "@vizctrl/maps-openlayers": "*"
+    "@vizctrl/maps-openlayers": "*",
+    "ol": "^9.0.0"
   },
   "devDependencies": {
     "vite": "^4.4.0",

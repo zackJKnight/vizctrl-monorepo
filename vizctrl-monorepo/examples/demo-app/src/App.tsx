@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Dial, AltitudeControl, SpeedControl, HeadingControl, DurationInput } from '@vizctrl/react';
 import { GeoPointPicker } from '@vizctrl/maps-openlayers';
-import { Quantity } from '@vizctrl/core/quantity';
+import { Quantity } from '@vizctrl/core';
 
 export default function App() {
   const [altitude, setAltitude] = useState<Quantity<'ft' | 'm'>>({ value: 1000, unit: 'ft' });

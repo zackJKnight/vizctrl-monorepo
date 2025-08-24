@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
@@ -41,7 +41,7 @@ export default function GeoPointPicker({ value, onChange, zoom = 4, label }: Geo
     // initialise marker
     const marker = new Feature(new Point(fromLonLat(value)));
     markerRef.current = marker;
-    const vectorSource = new VectorSource({ features: [marker] });
+    const vectorSource: VectorSource<Feature<Point>> = new VectorSource({ features: [marker] });
     const markerLayer = new VectorLayer({ source: vectorSource });
 
     const map = new Map({
@@ -51,7 +51,7 @@ export default function GeoPointPicker({ value, onChange, zoom = 4, label }: Geo
         markerLayer,
       ],
       view: new View({ center: fromLonLat(value), zoom }),
-      interactions: defaultInteractions().extend([new Modify({ source: vectorSource })]),
+      interactions: defaultInteractions().extend([new Modify({ source: vectorSource as unknown as VectorSource })]),
     });
 
     // update on click
